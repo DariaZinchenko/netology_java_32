@@ -1,7 +1,7 @@
 public class MobileOperatorBonus {
     public static void main (String[] args) {
         int currentAmountInKopecks = 100_87;
-        int amountInKopecks = 2535_43;
+        int amountInKopecks = 97_43;
         int coefficient = 100;
 
         System.out.println("Текущий баланс = " + (float)currentAmountInKopecks/100 + " руб.");
@@ -15,10 +15,10 @@ public class MobileOperatorBonus {
     }
 
     public static int calculateBonus (int amountInKopecks, int coefficient) {
-        if (amountInKopecks > 100 * 100) {
+        if (amountInKopecks > (100 * 100)) {
             return (amountInKopecks/coefficient/100) * 100;
         } else {
-            return amountInKopecks;
+            return 0;
         }
     }
 }
